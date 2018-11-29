@@ -1,0 +1,34 @@
+<!doctype html>
+
+<html>
+
+	<head>
+		<title>What's in my fridge?</title>
+	</head>
+
+	<body>
+
+		<p>Add a new item</p>
+		<div id="add-new-item">
+			<form method="post" action="/new">
+				<label for="name">What is it?</label>
+				<input type="text" id="name" name="name" required="required">
+				<br>
+				<label for="amount">How much do you have?</label>
+				<input type="amount" id="amount" name="amount" required="required">
+				<br>
+				<label for="amount">Food category</label>
+				<select name="amount">
+	  				<option value="vegetables">Vegetables</option>
+	  				<option value="fruit">Fruit</option>
+	  				<option value="dairy">Dairy</option>
+	  				<option value="meat">Meat</option>
+	  				<option value="other">Other</option>
+				</select>
+				<br>
+				<input type="submit" value="Submit" id="submit-button">
+			</form>
+		</div>
+	</body>
+
+</html>
