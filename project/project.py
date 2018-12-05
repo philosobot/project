@@ -33,11 +33,11 @@ for food in range(number):
 	items[food]["category"] = raw_input("What category is it?")
 	items[food]["date"] = now
 
-# print items
+print (items)
 
 @app.route("/")
 def home():
  		# print (items)
- 		return "Item submitted!"
+ 		return "{} submitted!".format(items[food]["name"])
 
 app.run(debug=True)
