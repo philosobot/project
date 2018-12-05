@@ -38,6 +38,6 @@ print (items)
 @app.route("/")
 def home():
  		# print (items)
- 		return "{} submitted!".format(items[food]["name"])
+ 		return "Item submitted: \n Name: {} \n Amount: {} \n Category: {} Date: {}".format(items[food]["name"], items[food]["amount"], items[food]["category"], items[food]["date"])
 
 app.run(debug=True)
