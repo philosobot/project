@@ -13,8 +13,6 @@
 # 	print form_data["category"]
 # 	return "Item submitted!"
 
-
-
 from flask import Flask, render_template, request
 
 app = Flask("MyApp")
@@ -39,7 +37,7 @@ for food in range(number):
 
 @app.route("/")
 def home():
- 		print items
+ 		# print (items)
  		return "Item submitted!"
 
 app.run(debug=True)
