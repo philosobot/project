@@ -1,6 +1,4 @@
-# from flask import Flask, render_template, request
 
-# app = Flask("MyApp")
 
 # @app.route("/")
 # def home():
@@ -15,8 +13,11 @@
 # 	print form_data["category"]
 # 	return "Item submitted!"
 
-# app.run(debug=True)
 
+
+from flask import Flask, render_template, request
+
+app = Flask("MyApp")
 
 import datetime
 now = datetime.datetime.now().date()
@@ -34,4 +35,11 @@ for food in range(number):
 	items[food]["category"] = raw_input("What category is it?")
 	items[food]["date"] = now
 
-print items
+# print items
+
+@app.route("/")
+def home():
+ 		print items
+ 		return "Item submitted!"
+
+app.run(debug=True)
