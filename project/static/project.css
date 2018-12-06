@@ -1,0 +1,65 @@
+* {
+  font-size: 16px;
+  font-family: serif;
+}
+
+h1 {
+margin-top: 100px;
+font-size: 45px;
+margin-bottom: 80px;
+text-align: center;
+font-family: 'Meddon', cursive;
+font-weight: bold;
+}
+.container {
+    background: url("https://i.pinimg.com/564x/14/95/d6/1495d6ef17f2bc7e4e837120748391bc.jpg");
+    background-position: center;
+    background-repeat: repeat-y;
+    background-size: cover;
+}
+
+#intro {
+  text-align: center;
+  font-family: 'serif', cursive;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+#P1 {
+  background-image: url("https://cdn.londonandpartners.com/asset/trafalgar-square-2c4ac9626a4fcce79cc7cbd8c4c30642.jpg");
+  background-size: cover;
+  }
+#P2 {
+  background-image: url("https://www.sartle.com/sites/default/files/images/artwork/the-lovers-19281.jpg");
+  background-size: cover;
+      }
+#P3 {
+  background-image: url("https://pl.abpoland.com/files/2016/05/palac-kultury-i-nauki61.jpg");
+  background-size: cover;
+            }
+#P4 {
+  background-image: url("http://www.littleobservationist.com/wp-content/uploads/2015/03/IMG_3016.jpg");
+  background-size: cover;
+                  }
+
+#P5 {
+  background-image: url("http://www.xpats.com/sites/default/files/friessamurai.jpg");
+  background-size: cover;
+    }
+
+#P6 {
+    background-image: url("https://czytamrecenzuje.pl/files/images/wrzesien_2017/jageniusz3.jpg");
+    background-size: cover;
+}
+
+.contact {
+  height: 300px;
+  max-height: 300px;
+  background-color: rgb(22, 23, 23);
+  margin-bottom: 0px;
+}
+
+.contact h2 {
+  vertical-align: middle;
+  line-height: 300px;
+}
