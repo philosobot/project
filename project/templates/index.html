@@ -4,30 +4,62 @@
 
 	<head>
 		<title>What's in my fridge?</title>
+		<link rel="stylesheet" type="text/css" href="project.css">
+		<link href="https://fonts.googleapis.com/css?family=Meddon" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	</head>
 
 	<body>
+		<div class="container">
+			<h1>What's in my fridge?</h1>
+			<p id='intro'> Do you need ideas for your next meal? Here are some interesting recipes you must try out based on what you already have in your fridge! </p>
 
-		<p>Add a new item</p>
-		<div id="add-new-item">
-			<form method="post" action="/new">
-				<label for="name">What is it?</label>
-				<input type="text" id="name" name="name" required="required">
-				<br>
-				<label for="amount">How much do you have?</label>
-				<input type="amount" id="amount" name="amount" required="required">
-				<br>
-				<label for="amount">Food category</label>
-				<select name="amount">
+			<p>Add a new item</p>
+
+			<div id="add-new-item">
+				<form method="post" action="/new">
+					<label for="name">What is it?</label>
+					<input type="text" id="name" name="name" required="required">
+					<br>
+					<label for="amount">How much do you have?</label>
+					<input type="amount" id="amount" name="amount" required="required">
+					<br>
+					<label for="amount">Food category</label>
+					<select name="amount">
 	  				<option value="vegetables">Vegetables</option>
 	  				<option value="fruit">Fruit</option>
 	  				<option value="dairy">Dairy</option>
 	  				<option value="meat">Meat</option>
 	  				<option value="other">Other</option>
-				</select>
-				<br>
-				<input type="submit" value="Submit" id="submit-button">
-			</form>
+					</select>
+					<br>
+					<input type="submit" value="Submit" id="submit-button">
+				</form>
+
+			</div>
+
+			<div class="table">
+			  <div class="row">
+			    <div id="P1" style="background-color:lavender;"></div>
+			    <div id="P2" style="background-color:lavenderblush;"></div>
+			    <div id="P3" style="background-color:lavender;"></div>
+			  </div>
+			  <div class="row">
+			    <div id="P4" style="background-color:lavender;"></div>
+			    <div id="P5" style="background-color:lavenderblush;"></div>
+			    <div id="P6" style="background-color:lavender;"></div>
+			  </div>
+
+			</div>
+
+			<div class="contact text-center">
+			  <h2>Contact</h2>
+			</div>
+
+
 		</div>
 	</body>
 
